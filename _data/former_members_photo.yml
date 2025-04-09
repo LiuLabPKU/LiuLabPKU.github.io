@@ -1,0 +1,47 @@
+- name: "Baiyan Qian (钱柏言)"
+  time: "2021-2022"
+  title: "Undergraduate student"
+  description: "PhD student, Chicago University"
+  image: "assets/images/people/qianbaiyan.jpg"
+
+- name: "Xuanhao Zhu (朱选昊)"
+  time: "2021-2022"
+  title: "Technician"
+  description: ""
+  image: "assets/images/people/zhuxuanhao.jpg"
+
+- name: "Yu Wang (王瑜)"
+  title: "Rotation student"
+  description: ""
+  image: "assets/images/people/wangyu.jpg"
+
+- name: "Lingxiang Chen (陈凌翔)"
+  title: "Rotation student"
+  description: ""
+  image: "assets/images/people/chenlingxiang.jpg"
+
+- name: "Tianxin Chen (陈天欣)"
+  title: "Rotation student"
+  description: ""
+  image: "assets/images/people/chentianxin.jpg"
+
+- name: "Zhangyi Lai (来章怡)"
+  title: "Rotation student"
+  description: ""
+  image: "assets/images/people/laizhangyi.jpg"
+  
+- name: "Lulu Huang (黄露露)"
+  time: "202-2025.1"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/huanglulu.jpg"
+
+- name: "Haoxuan Dong (董浩轩)"
+  title: "Undergraduate student"
+  description: ""
+  image: "assets/images/people/donghaoxuan.jpg"
+
+- name: "Yue Yang (杨悦)"
+  title: "Undergraduate student"
+  description: ""
+  image: "assets/images/people/yangyue.jpg"

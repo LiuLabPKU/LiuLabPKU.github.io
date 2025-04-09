@@ -1,0 +1,27 @@
+#photo-wall {
+    -moz-column-count: 2;    /* Firefox */
+    -webkit-column-count: 2; /* Safari 和 Chrome */
+    column-count: 2;         /* 标准语法 */
+    
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+
+    .photo {
+        margin-bottom: 10px;
+        break-inside: avoid; /* 避免在元素内部断开 */
+        /* 新增的居中样式 */
+        display: flex;
+        justify-content: center;
+        transition: transform 0.2s; /* 动画效果 */
+    }
+    
+    .photo img {
+        width: 100%; /* 图片宽度 */
+        height: auto; /* 图片高度自动 */
+        border-radius: 10px; /* 图片边角圆润 */
+    }
+    .photo:hover {
+        transform: scale(1.01); /* 鼠标悬浮时图片放大 */
+    }
+}

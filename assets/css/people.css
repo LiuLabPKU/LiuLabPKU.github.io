@@ -1,0 +1,117 @@
+/* people.css */
+.people-hr {
+    border: none;       /* 移除默认边框 */
+    margin: 2rem auto;
+    width: 60%;
+    height: 2px;        /* 设置线的高度，即粗细 */
+    background-color: #868282; /* 设置线的颜色 */
+    margin: 0px auto 30px;     /* 添加一些垂直外边距 */
+  }
+  
+  .member-section {
+    margin-bottom: 3rem;
+  }
+  
+  .member-photo {
+    padding: 0.75rem;
+  }
+  
+  .member-photo img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
+  
+  .member-info {
+    padding: 1.5rem;
+  }
+  
+  .member-name {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-title {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .member-item {
+      flex-direction: column;
+    }
+    
+    .member-photo img {
+      height: 200px;
+    }
+    
+    .member-info {
+      text-align: center !important;
+      padding: 1rem;
+    }
+  }
+
+  #peoples {
+    display: flex;
+    flex-wrap: wrap;
+
+    .photo {
+        display: flex;
+        justify-content: center;
+        width: 50%; /* 每个成员占据一半宽度 */
+        margin-bottom: 0px;
+        transition: transform 0.2s; /* 动画效果 */
+
+        break-inside: avoid; /* 避免在元素内部断开 */
+    }
+    
+    .photo img {
+        width: 100%; /* 图片宽度 */
+        height: auto; /* 图片高度自动 */
+        border-radius: 10px; /* 图片边角圆润 */
+    }
+}
+
+#members-col3 {
+  display: flex;
+  flex-wrap: wrap;
+
+  .photo {
+      display: flex;
+      justify-content: center;
+      width: 33%; /* 每个成员占据一半宽度 */
+      margin-bottom: 0px;
+      transition: transform 0.2s; /* 动画效果 */
+
+      break-inside: avoid; /* 避免在元素内部断开 */
+  }
+  
+  .photo img {
+      width: 100%; /* 图片宽度 */
+      padding:0px;
+      height: auto; /* 图片高度自动 */
+      border-radius: 10px; /* 图片边角圆润 */
+  }
+}
+
+#lab-manager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* 垂直居中 */
+
+    .photo-row {
+        width: 70%;
+        height: auto; /* 图片高度自动 */
+        border-radius: 20px; /* 图片边角圆润 */
+    }
+
+}
+
+#former-members {
+    display: flex;
+    
+}

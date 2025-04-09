@@ -1,0 +1,59 @@
+<!-- _includes/member-section.html -->
+
+<h3 class="has-text-centered">{{ include.title }}</h3>
+<hr class="people-hr">
+<div id="members-col3" >
+    {% assign cols = include.cols | default: 2 %} <!-- 默认每行2人 -->
+    {% if cols == 2 %}
+      {% for member in site.data[include.data_source] %}
+      <div class="photo" style="width: 50%"> <!-- 每个成员占据半行宽度 -->
+          <div class="column is-5 " style="padding:0px"> <!-- 图像占2份 -->
+                  <img class="is-square is-1by1" src="{{ member.image }}" alt="{{ member.name }}">
+          </div>
+          <div class="column is-7"> <!-- 文本占3份 -->
+              <div class="has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
+                  <h4>
+                    {% assign member_page = site.members | where: "user_id", member.id | first %}
+                    {% if member_page %}
+                      <a href="{{ site.baseurl }}{{ member_page.url }}" class="member-link">
+                    {% else %}
+                      <span class="member-text">
+                    {% endif %}
+                        {{ member.name }}
+                    {% if member_page %}</a>{% else %}</span>{% endif %}
+                  </h4>
+                  <p>{{ member.title }} </p>
+                  <p>{{ member.description }}</p>
+              </div>
+          </div>
+        </div>
+        {% endfor %}
+    {% else %}
+      {% for member in site.data[include.data_source] %}
+      <div class="photo"> <!-- 每个成员占据半行宽度 -->
+        <div class="column is-4 " style="padding:0px"> <!-- 图像占2份 -->
+          <img class="is-square is-1by1" src="{{ member.image }}" alt="{{ member.name }}">
+        </div>
+        <div class="column is-8"> <!-- 文本占3份 -->
+            <div class="has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
+              <h4>
+                {% assign member_page = site.members | where: "user_id", member.id | first %}
+                {% if member_page %}
+                  <a href="{{ site.baseurl }}{{ member_page.url }}" class="member-link">
+                {% else %}
+                  <span class="member-text">
+                {% endif %}
+                    {{ member.name }}
+                {% if member_page %}</a>{% else %}</span>{% endif %}
+              </h4>
+                <p>{{ member.title }} </p>
+                <p>{{ member.time }} </p>
+                <p>{{ member.description }}</p>
+            </div>
+        </div>
+        
+      </div>
+      {% endfor %}
+    {% endif %}
+  
+</div>
