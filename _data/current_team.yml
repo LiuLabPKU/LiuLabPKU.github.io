@@ -14,7 +14,7 @@
   description: ""
   image: "assets/images/people/xiangxiang.jpg"
 
-- name: "Hua Xiao | 小花"
+- name: "Hua Xiao (小花)"
   title: "Visiter"
   description: ""
   image: "assets/images/people/xiaohua.jpg"
@@ -56,7 +56,7 @@
 
 - name: "Zhangxian Zhou (周章娴)"
   title: "PhD student"
-  description: ""
+  description: "上坡要努力，下坡要开心"
   image: "assets/images/people/zhouzhangxian.jpg"
 
 - id: tangli
@@ -95,4 +95,36 @@
   title: "PhD student"
   description: ""
   image: "assets/images/people/qiuyuhang.jpg"
+
+
+
+- name: "Zhedong Tang (汤哲栋)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/tangzhedong.jpg"
+
+- name: "Jihong Lv (吕继宏)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/lvjihong.jpg"
+
+- name: "Qirui Feng (冯麒瑞)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/fengqirui.jpg"
+
+- name: "Yingyue Han (韩颖玥)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/hanyingyue.png"
+
+- name: "Bingyu Liang (梁冰玉)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/liangbingyu.jpg"
+
+- name: "Wenqing Ding (丁文卿)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/dingwenqing.png"
 

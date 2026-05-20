@@ -5,6 +5,12 @@
   summary: "三位同学在博士期间分别在RNA修饰调控干细胞命运、亚细胞RNA谱分析技术开发以及全转录组m6A功能筛选等方向取得了重要研究成果。感谢他们为实验室做出的重要贡献，祝愿他们在未来的学术道路上一切顺利！"
   image: "assets/images/news/phd-defense-2026.jpg"
 
+- date: "2026-05-08"
+  slug: "2026-05-08-genomebio"
+  title: "祝贺康自红在《Genome Biology》发表成果，揭示LINE1 RNA去甲基化增强PARPi抗肿瘤疗效"
+  summary: "该研究首次发现LINE1 RNA的m6A修饰是调控癌细胞DNA损伤修复和PARPi敏感性的关键分子开关，揭示了LINE1 RNA表观修饰调控染色质状态和DNA损伤修复的全新机制。康自红、李瑞萌、徐磊为论文共同第一作者，刘君研究员、杨雪瑞教授、王磊教授为共同通讯作者。"
+  image: "assets/images/news/genomebio-2026.png"
+
 - date: "2026-04-29"
   slug: "2026-04-29-nar"
   title: "祝贺丁文卿、邓启东、王天雨在《Nucleic Acids Research》发表研究成果"
