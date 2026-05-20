@@ -18,21 +18,11 @@
   title: "Visiter"
   description: ""
   image: "assets/images/people/xiaohua.jpg"
-  
-- name: "Xiaoyang Liu (刘潇阳)"
-  title: "PhD student"
-  description: ""
-  image: "assets/images/people/liuxiaoyang.jpg"
 
 - name: "Zihong Kang (康自红)"
-  title: "PhD student"
+  title: "PostDoc"
   description: ""
   image: "assets/images/people/kangzihong.jpg"
-
-- name: "Tianyu Wang (王天雨)"
-  title: "PhD student"
-  description: ""
-  image: "assets/images/people/wangtianyu.jpg"
 
 - name: "Weide Xiao (肖维德)"
   title: "PhD student"
@@ -102,22 +92,7 @@
   image: "assets/images/people/zhushiyao.jpg"
 
 - name: "Yuhang Qiu (邱宇航)"
-  title: "Undergraduate student"
+  title: "PhD student"
   description: ""
   image: "assets/images/people/qiuyuhang.jpg"
-
-- name: "Yuchen Zhang (张羽辰)"
-  title: "Undergraduate student"
-  description: ""
-  image: "assets/images/people/zhangyuchen.jpg"
-
-- name: "Yijian Zhou (周义简)"
-  title: "Undergraduate student"
-  description: ""
-  image: "assets/images/people/zhouyijian.jpg"
-  
-- name: "Lida Sun (孙理达)"
-  title: "Undergraduate student"
-  description: ""
-  image: "assets/images/people/sunlida.jpg"
 

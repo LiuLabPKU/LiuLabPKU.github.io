@@ -1,7 +1,4 @@
-<!-- _includes/news-card.html
-     Single news item card.
-     Pass: news=item, show_image=true/false
--->
+<!-- _includes/news-card.html — params: news=item, show_image=true/false -->
 {% assign item = include.news %}
 <div class="news-card">
     {% if include.show_image != false and item.image %}
@@ -11,7 +8,13 @@
     {% endif %}
     <div class="news-body">
         <div class="news-date">{{ item.date | date: "%Y.%m.%d" }}</div>
-        <h3 class="news-title">{{ item.title }}</h3>
+        <h3 class="news-title">
+            {% if item.slug %}
+            <a href="{{ '/news/' | append: item.slug | relative_url }}" style="color:#222; text-decoration:none;">{{ item.title }}</a>
+            {% else %}
+            {{ item.title }}
+            {% endif %}
+        </h3>
         <p class="news-summary">{{ item.summary }}</p>
     </div>
 </div>

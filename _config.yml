@@ -98,5 +98,8 @@ exclude:
 
 collections:
   members:
-    output: true  # 生成独立页面
-    permalink: /members/:name/  # 自定义URL格式
+    output: true
+    permalink: /members/:name/
+  news_items:
+    output: true
+    permalink: /news/:path/

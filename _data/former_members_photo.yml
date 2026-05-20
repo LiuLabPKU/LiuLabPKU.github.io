@@ -1,3 +1,14 @@
+  
+- name: "Xiaoyang Liu (刘潇阳)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/liuxiaoyang.jpg"
+
+- name: "Tianyu Wang (王天雨)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/wangtianyu.jpg"
+
 - name: "Baiyan Qian (钱柏言)"
   time: "2021-2022"
   title: "Undergraduate student"
@@ -9,42 +20,12 @@
   title: "Technician"
   description: ""
   image: "assets/images/people/zhuxuanhao.jpg"
-
-- name: "Yu Wang (王瑜)"
-  title: "Rotation student"
-  description: ""
-  image: "assets/images/people/wangyu.jpg"
-
-- name: "Lingxiang Chen (陈凌翔)"
-  title: "Rotation student"
-  description: ""
-  image: "assets/images/people/chenlingxiang.jpg"
-
-- name: "Tianxin Chen (陈天欣)"
-  title: "Rotation student"
-  description: ""
-  image: "assets/images/people/chentianxin.jpg"
-
-- name: "Zhangyi Lai (来章怡)"
-  title: "Rotation student"
-  description: ""
-  image: "assets/images/people/laizhangyi.jpg"
   
 - name: "Lulu Huang (黄露露)"
-  time: "2020-2025.1"
+  time: "2020-2025"
   title: "PhD student"
   description: ""
   image: "assets/images/people/huanglulu.jpg"
-
-- name: "Haoxuan Dong (董浩轩)"
-  title: "Undergraduate student"
-  description: ""
-  image: "assets/images/people/donghaoxuan.jpg"
-
-- name: "Yue Yang (杨悦)"
-  title: "Undergraduate student"
-  description: ""
-  image: "assets/images/people/yangyue.jpg"
 
 - name: "Huang Xiaoke (黄晓科)"
   title: "PostDoc"
