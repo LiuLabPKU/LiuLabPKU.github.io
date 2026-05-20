@@ -1,19 +1,14 @@
 <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">
-        MORE
-    </a>
-    <div class="navbar-dropdown has-background-black is-left">
+    <a class="navbar-link" style="color:#333;">MORE</a>
+    <div class="navbar-dropdown is-left" style="background:#fff; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
         {% for sitepage in site.html_pages %}
-        {% unless sitepage.url == '/' or sitepage.url == '/404'  or sitepage.url == '/blog'  or sitepage.url == '/project' or sitepage.url == '/research' or sitepage.url == '/people' or sitepage.url == '/publications'%}
+        {% unless sitepage.url == '/' or sitepage.url == '/404' or sitepage.url == '/research' or sitepage.url == '/people' or sitepage.url == '/publications' or sitepage.url == '/photos' or sitepage.url == '/join' or sitepage.url == '/news' %}
         <a href="{{sitepage.url | absolute_url}}"
-            class="navbar-item has-text-grey-light {% if page.url == sitepage.url | absolute_url  %}is-active{% endif %}">
+            class="navbar-item {% if page.url == sitepage.url | absolute_url %}is-active{% endif %}"
+            style="color:#444;">
             {{sitepage.title}}
         </a>
         {% endunless %}
         {% endfor %}
-        <!-- <hr class="navbar-divider">
-    <a class="navbar-item">
-      Report an issue
-    </a> -->
     </div>
 </div>

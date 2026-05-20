@@ -13,9 +13,9 @@ description: Explore RNA's mysteries in health and disease
 # URL of Image of the Site
 site-image: /assets/images/meta.jpg
 # Keywords of the Site
-site-keywords: Site, Template, Theme
+site-keywords: Liu Lab, RNA, m6A, epigenetics, transcription, Peking University, 刘君实验室, RNA修饰, 表观遗传
 # URL for the Image of custom Favicon
-favicon-url: 
+favicon-url: /assets/images/logo/logo_64_64_white.png
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: /assets/images/heroimage.jpg
@@ -45,9 +45,9 @@ author-name: Liu Lab
 # URL for the Image of the Author
 author-image: /assets/images/logo/logo_64_64_white.png
 # 60 Words About the Author
-author-about: Our laboratory is dedicated to investigate the molecular regulatory mechanisms and related biological functions of RNA modified/non-coding RNA. We use epigenetics, molecular biology, and high-throughput sequencing to explore the novel regulatory mechanisms of RNA modification/ncRNA on chromatin structure and gene transcription, and the biological functions of related regulatory pathways in embryonic stem cell differentiation, anti-tumor immunity, cancer and aging.
+author-about: 刘君实验室隶属于北京大学生命科学学院和北大-清华生命科学联合中心，致力于RNA表观转录组学与染色质生物学交叉领域的前沿研究。实验室以RNA修饰（m6A、假尿苷等）为核心，系统探究染色质RNA修饰调控基因组转录和着丝粒稳定性的分子机制，以及RNA修饰在胚胎发育、干细胞命运决定、肿瘤免疫和衰老中的生物学功能。
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+author-url: https://scholar.google.com/citations?hl=en&user=ktNYEi8AAAAJ
 
 # SASS
 sass:

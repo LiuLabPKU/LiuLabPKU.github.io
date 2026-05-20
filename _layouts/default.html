@@ -6,36 +6,44 @@ layout: compress
 <html>
 {% include head.html %}
 
+<link rel="stylesheet" href="{{ '/assets/css/hero.css' | relative_url }}">
+
 <body>
   {% include navbar.html %}
   {% include showcase.html %}
   {% include about.html %}
+  {% include research-highlights.html %}
+  {% include news-preview.html %}
+  {% include photo-preview.html %}
   {% include contact.html %}
-  <!--Footer begins here-->
   {% include footer.html %}
 </body>
+
 <script>
-  var navItems = document.getElementsByClassName('navbar-item');
-  var heroes = document.getElementsByClassName('hero');
-  const viewOffset = 200; 
+(function() {
+  var navLinks = document.querySelectorAll('#navbar .navbar-end .navbar-item[href]');
+  var heroes = document.querySelectorAll('.hero[id]');
+  var viewOffset = 200;
 
-  window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    var position = window.pageYOffset;
+  window.addEventListener("scroll", function () {
+    var scroll = window.pageYOffset;
+    navLinks.forEach(function(el) { el.classList.remove('is-active'); });
 
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove('is-active');
-    }
-
-    for (var i = 0; i < heroes.length; i++) {
-        var sectionTop = heroes[i].offsetTop-viewOffset;
-        var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight-viewOffset;
-
-        if (scroll >= sectionTop && scroll < sectionBottom) {
-          navItems[i+1].classList.add('is-active');
+    for (var i = heroes.length - 1; i >= 0; i--) {
+      var top = heroes[i].offsetTop - viewOffset;
+      if (scroll >= top) {
+        var id = heroes[i].getAttribute('id');
+        for (var j = 0; j < navLinks.length; j++) {
+          if (navLinks[j].getAttribute('href').indexOf('#' + id) !== -1) {
+            navLinks[j].classList.add('is-active');
+            break;
+          }
+        }
+        break;
       }
     }
   });
+})();
 </script>
 
 </html>

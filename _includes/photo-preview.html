@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ '/assets/css/photo-preview.css' | relative_url }}">
+
+<section class="hero has-text-centered" id="photo-preview" style="background:#f0f0f0;">
+    <div class="hero-body" style="padding:3.5rem 1.5rem;">
+        <div class="container">
+            <h2 class="title is-2 is-uppercase has-text-weight-bold" style="color:#222;">Lab Life</h2>
+            <hr style="width:60px; height:2px; margin:1.5rem auto 2rem; background:linear-gradient(90deg,transparent,#4a90b8,transparent); border:none;">
+            <div class="photo-grid">
+                {% assign preview_photos = site.data.photos | slice: 0, 6 %}
+                {% for photo in preview_photos %}
+                <div class="photo-grid-item">
+                    <img src="{{ photo.url }}" alt="Lab photo" loading="lazy">
+                </div>
+                {% endfor %}
+            </div>
+            <a href="{{site.url}}{{site.baseurl}}/photos"
+               class="button is-outlined is-rounded is-uppercase has-text-weight-normal"
+               style="margin-top:2rem; border-color:#888; color:#444;">
+                View Full Gallery →
+            </a>
+        </div>
+    </div>
+</section>

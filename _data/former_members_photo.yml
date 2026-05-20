@@ -31,7 +31,7 @@
   image: "assets/images/people/laizhangyi.jpg"
   
 - name: "Lulu Huang (黄露露)"
-  time: "202-2025.1"
+  time: "2020-2025.1"
   title: "PhD student"
   description: ""
   image: "assets/images/people/huanglulu.jpg"
@@ -45,3 +45,11 @@
   title: "Undergraduate student"
   description: ""
   image: "assets/images/people/yangyue.jpg"
+
+- name: "Huang Xiaoke (黄晓科)"
+  title: "PostDoc"
+  description: ""
+
+- name: "Nie Junli (聂君礼)"
+  title: ""
+  description: ""

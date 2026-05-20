@@ -1,29 +1,30 @@
-<section class="hero is-fullheight has-text-centered has-background-white-ter" id="about">
+<section class="hero is-fullheight has-text-centered" id="about" style="background:#fff;">
     <div class="hero-body">
         <div class="container">
-            <div class="columns">
-                <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
-                    <figure class="image">
-                        <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
+            <h2 class="title is-2 is-uppercase has-text-weight-bold" style="color:#222;">About the Lab</h2>
+            <hr style="width:60px; height:2px; margin:1.5rem auto 2.5rem; background:linear-gradient(90deg,transparent,#4a90b8,transparent); border:none;">
+            <div class="columns is-vcentered">
+                <div class="column is-one-fifth-desktop">
+                    <figure class="image" style="max-width:160px; margin:0 auto;">
+                        <img style="border-radius:50%;" src="{{site.author-image}}" alt="{{site.author-name}}">
                     </figure>
                 </div>
-                <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-                    <p>{{site.author-about}}</p>
+                <div class="column has-text-left-desktop">
+                    <p style="font-size:1.1rem; color:#333; line-height:1.9; margin-bottom:1rem;">{{site.author-about}}</p>
                     <br>
                     <div class="container columns is-centered">
-                        <div>
-                            <a href="{{site.url}}{{site.baseurl}}/#contact"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Contact
-                                Me</a>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="{{site.url}}{{site.baseurl}}/blog"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Blog</a>
-                            </a>
-                        </div>
+                        <a href="{{site.url}}{{site.baseurl}}/research"
+                           class="button is-rounded is-uppercase has-text-weight-normal"
+                           style="border:1px solid #888; color:#444; margin:0 0.5rem;">Research</a>
+                        <a href="{{site.url}}{{site.baseurl}}/join"
+                           class="button is-rounded is-uppercase has-text-weight-normal"
+                           style="border:1px solid #888; color:#444; margin:0 0.5rem;">Join Us</a>
                     </div>
                 </div>
             </div>
+            <div style="max-width:640px; margin:3rem auto 0;">
+                <img src="{{ '/assets/images/photos/3year.jpg' | relative_url }}" alt="Liu Lab" style="width:100%; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+            </div>
         </div>
+    </div>
 </section>

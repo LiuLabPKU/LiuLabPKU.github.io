@@ -1,57 +1,43 @@
 <footer id="footer">
-    <!--Footer Button-->
-    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
-        <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
+    <div class="container has-text-centered" id="backtotop" style="background:#444;">
+        <a style="color:#fff;" onclick="window.scroll(0,0)">BACK TO TOP</a>
     </div>
-    <!--Footer Main Section-->
-    <div class="has-background-grey-darker">
-        <div class="container columns">
-            <!--Name Section-->
+    <div style="background:#333;">
+        <div class="container columns" style="padding:1.5rem; line-height:1.4;">
             <div class="column has-text-left-desktop has-text-centered-mobile">
                 <a href="{{site.url}}{{site.baseurl}}/#about">
                     <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
-                            <figure class="image is-64x64">
+                        <div class="column is-one-fifth-desktop is-one-quarter-tablet">
+                            <figure class="image is-64x64" style="margin:auto;">
                                 <img class="is-rounded" src="{{site.author-image}}">
                             </figure>
                         </div>
                         <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
+                            <h5 style="color:#ddd;">{{site.author-name}}</h5>
+                            <div class="content">
+                                <p style="color:#aaa; font-size:0.85rem;">{{site.author-about | truncate: 75 }}</p>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-
-            <!--Link Section-->
-            <div class="column has-text-white">
-                <h3>More Links</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
-                <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li>
+            <div class="column" style="color:#ccc;">
+                <h3 style="color:#ddd; margin-bottom:0.5rem;">Quick Links</h3>
+                <li><a href="{{site.url}}{{site.baseurl}}/research" style="color:#aaa;">Research</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/publications" style="color:#aaa;">Publications</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/people" style="color:#aaa;">Group</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/join" style="color:#aaa;">Join Us</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/news" style="color:#aaa;">News</a></li>
             </div>
-
-            <!--Blog-post Section-->
-            <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
+            <div class="column" style="color:#ccc;">
+                <h3 style="color:#ddd; margin-bottom:0.5rem;">Contact</h3>
+                <li><a href="mailto:{{site.email}}" style="color:#aaa;">{{site.email}}</a></li>
+                <li><a href="https://scholar.google.com/citations?hl=en&user=ktNYEi8AAAAJ" target="_blank" rel="noopener" style="color:#aaa;">Google Scholar</a></li>
+                <li style="color:#888; font-size:0.85rem; margin-top:0.8rem;">School of Life Sciences<br>Peking University<br>Beijing, China</li>
             </div>
         </div>
     </div>
-    <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    <div style="background:#222; text-align:center; padding:0.75rem; font-size:0.85rem; color:#999;">
+        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} Liu Lab @ Peking University. All rights reserved.
     </div>
 </footer>

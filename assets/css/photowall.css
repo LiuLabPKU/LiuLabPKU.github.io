@@ -1,27 +1,33 @@
 #photo-wall {
-    -moz-column-count: 2;    /* Firefox */
-    -webkit-column-count: 2; /* Safari 和 Chrome */
-    column-count: 2;         /* 标准语法 */
-    
-    -moz-column-gap: 10px;
-    -webkit-column-gap: 10px;
-    column-gap: 10px;
-
-    .photo {
-        margin-bottom: 10px;
-        break-inside: avoid; /* 避免在元素内部断开 */
-        /* 新增的居中样式 */
-        display: flex;
-        justify-content: center;
-        transition: transform 0.2s; /* 动画效果 */
-    }
-    
-    .photo img {
-        width: 100%; /* 图片宽度 */
-        height: auto; /* 图片高度自动 */
-        border-radius: 10px; /* 图片边角圆润 */
-    }
-    .photo:hover {
-        transform: scale(1.01); /* 鼠标悬浮时图片放大 */
+    -moz-column-count: 3 !important;
+    -webkit-column-count: 3 !important;
+    column-count: 3 !important;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#photo-wall .photo {
+    margin-bottom: 20px;
+    break-inside: avoid;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+#photo-wall .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+#photo-wall .photo:hover {
+    transform: scale(1.02);
+}
+@media screen and (max-width: 768px) {
+    #photo-wall {
+        -moz-column-count: 2 !important;
+        -webkit-column-count: 2 !important;
+        column-count: 2 !important;
     }
 }

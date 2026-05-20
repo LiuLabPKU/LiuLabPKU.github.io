@@ -1,0 +1,20 @@
+/* Research Highlights cards */
+.highlight-card {
+    text-align: left; padding: 1.5rem;
+    background: #fff; border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.06); height: 100%;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.highlight-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px);
+}
+.highlight-journal {
+    font-size: 0.85rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: #888; margin-bottom: 0.5rem;
+}
+.highlight-title {
+    font-size: 1.05rem; font-weight: 600; line-height: 1.5; margin-bottom: 0.6rem;
+}
+.highlight-title a { color: #333; text-decoration: none; }
+.highlight-title a:hover { color: #4a90b8; text-decoration: underline; }
+.highlight-authors { font-size: 0.9rem; color: #777; line-height: 1.5; }

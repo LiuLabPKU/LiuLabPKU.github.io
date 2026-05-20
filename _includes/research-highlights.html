@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ '/assets/css/research-highlights.css' | relative_url }}">
+
+<section class="hero has-text-centered" id="highlights" style="background:#f5f5f5;">
+    <div class="hero-body" style="padding:3.5rem 1.5rem;">
+        <div class="container">
+            <h2 class="title is-2 is-uppercase has-text-weight-bold" style="color:#222;">Research Highlights</h2>
+            <hr style="width:60px; height:2px; margin:1.5rem auto 2.5rem; background:linear-gradient(90deg,transparent,#4a90b8,transparent); border:none;">
+            <div class="columns is-multiline is-centered">
+                {% assign highlights = site.data.publications | sort: 'Date' | reverse | slice: 0, 3 %}
+                {% for pub in highlights %}
+                <div class="column is-4">
+                    <div class="highlight-card">
+                        <div class="highlight-journal">{{ pub.Journal }} · {{ pub.Year }}</div>
+                        <h3 class="highlight-title">
+                            <a href="https://doi.org/{{ pub.DOI }}" target="_blank" rel="noopener">{{ pub.Title }}</a>
+                        </h3>
+                        <p class="highlight-authors">{{ pub.Author | truncate: 120 }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <a href="{{site.url}}{{site.baseurl}}/publications" 
+               class="button is-outlined is-rounded is-uppercase has-text-weight-normal"
+               style="margin-top:2rem; border-color:#888; color:#444;">
+                View All Publications →
+            </a>
+        </div>
+    </div>
+</section>

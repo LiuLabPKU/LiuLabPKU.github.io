@@ -1,0 +1,17 @@
+<!-- _includes/news-card.html
+     Single news item card.
+     Pass: news=item, show_image=true/false
+-->
+{% assign item = include.news %}
+<div class="news-card">
+    {% if include.show_image != false and item.image %}
+    <div class="news-image">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy">
+    </div>
+    {% endif %}
+    <div class="news-body">
+        <div class="news-date">{{ item.date | date: "%Y.%m.%d" }}</div>
+        <h3 class="news-title">{{ item.title }}</h3>
+        <p class="news-summary">{{ item.summary }}</p>
+    </div>
+</div>

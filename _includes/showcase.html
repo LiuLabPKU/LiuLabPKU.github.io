@@ -1,19 +1,20 @@
 <section class="hero is-fullheight has-text-centered" id="hero">
+  <div class="hero-overlay"></div>
   <div class="hero-body">
     <div class="container">
-      <div>
-        <img style="width:80%" src="/assets/images/logo/logo_raw_heng_alpha0.png">
+      <div class="hero-logo-wrap">
+        <img src="/assets/images/logo/logo_raw_heng_alpha0.png" alt="Liu Lab Logo">
       </div>
-      <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
+      <h1 class="title is-size-1 is-uppercase has-text-weight-bold hero-title">
         {{site.title}}
       </h1>
-      <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
+      <div class="hero-accent"></div>
+      <h3 class="subtitle is-uppercase has-text-weight-medium is-marginless hero-subtitle">
         {{site.description}}
       </h3>
-      <hr>
       <a href="{{site.url}}{{site.baseurl}}/#about"
-        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Read More</a>
-      </a>
+        class="button is-rounded is-outlined is-uppercase has-text-weight-normal hero-cta"
+        onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'}); return false;">Explore Our Research</a>
     </div>
   </div>
 </section>

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="{{ '/assets/css/news.css' | relative_url }}">
+
+<section class="hero has-text-centered" id="news-preview" style="background:#fff;">
+    <div class="hero-body" style="padding:3.5rem 1.5rem;">
+        <div class="container">
+            <h2 class="title is-2 is-uppercase has-text-weight-bold" style="color:#222;">Latest News</h2>
+            <hr style="width:60px; height:2px; margin:1.5rem auto 2.5rem; background:linear-gradient(90deg,transparent,#4a90b8,transparent); border:none;">
+            <div style="max-width:900px; margin:0 auto;">
+                {% assign latest = site.data.news | sort: 'date' | reverse | slice: 0, 3 %}
+                {% for item in latest %}
+                    {% include news-card.html news=item show_image=false %}
+                {% endfor %}
+            </div>
+            <a href="{{site.url}}{{site.baseurl}}/news"
+               class="button is-outlined is-rounded is-uppercase has-text-weight-normal"
+               style="margin-top:2rem; border-color:#888; color:#444;">
+                View All News →
+            </a>
+        </div>
+    </div>
+</section>

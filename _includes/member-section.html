@@ -1,59 +1,33 @@
-<!-- _includes/member-section.html -->
+<!-- _includes/member-section.html — params: title, data_source, cols -->
+{% assign cols = include.cols | default: 2 %}
+<h3 style="font-size:1.8rem;font-weight:700;color:#222;text-align:center;margin-top:3rem;letter-spacing:0.04em;">{{ include.title }}</h3>
+<hr style="border:none;width:60%;height:2px;background:#ddd;margin:0 auto 30px;">
 
-<h3 class="has-text-centered">{{ include.title }}</h3>
-<hr class="people-hr">
-<div id="members-col3" >
-    {% assign cols = include.cols | default: 2 %} <!-- 默认每行2人 -->
-    {% if cols == 2 %}
-      {% for member in site.data[include.data_source] %}
-      <div class="photo" style="width: 50%"> <!-- 每个成员占据半行宽度 -->
-          <div class="column is-5 " style="padding:0px"> <!-- 图像占2份 -->
-                  <img class="is-square is-1by1" src="{{ member.image }}" alt="{{ member.name }}">
-          </div>
-          <div class="column is-7"> <!-- 文本占3份 -->
-              <div class="has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-                  <h4>
-                    {% assign member_page = site.members | where: "user_id", member.id | first %}
-                    {% if member_page %}
-                      <a href="{{ site.baseurl }}{{ member_page.url }}" class="member-link">
-                    {% else %}
-                      <span class="member-text">
-                    {% endif %}
-                        {{ member.name }}
-                    {% if member_page %}</a>{% else %}</span>{% endif %}
-                  </h4>
-                  <p>{{ member.title }} </p>
-                  <p>{{ member.description }}</p>
-              </div>
-          </div>
-        </div>
-        {% endfor %}
-    {% else %}
-      {% for member in site.data[include.data_source] %}
-      <div class="photo"> <!-- 每个成员占据半行宽度 -->
-        <div class="column is-4 " style="padding:0px"> <!-- 图像占2份 -->
-          <img class="is-square is-1by1" src="{{ member.image }}" alt="{{ member.name }}">
-        </div>
-        <div class="column is-8"> <!-- 文本占3份 -->
-            <div class="has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-              <h4>
-                {% assign member_page = site.members | where: "user_id", member.id | first %}
-                {% if member_page %}
-                  <a href="{{ site.baseurl }}{{ member_page.url }}" class="member-link">
-                {% else %}
-                  <span class="member-text">
-                {% endif %}
-                    {{ member.name }}
-                {% if member_page %}</a>{% else %}</span>{% endif %}
-              </h4>
-                <p>{{ member.title }} </p>
-                <p>{{ member.time }} </p>
-                <p>{{ member.description }}</p>
-            </div>
-        </div>
-        
+<div style="display:grid;gap:1.5rem;max-width:1100px;margin:0 auto;{% if cols == 3 %}grid-template-columns:repeat(3,1fr);{% else %}grid-template-columns:repeat(2,1fr);{% endif %}">
+  {% for member in site.data[include.data_source] %}
+    {% assign mp = site.members | where: "user_id", member.id | first %}
+    <div style="display:flex;gap:1rem;background:#fff;border-radius:10px;padding:1.2rem;border:1px solid rgba(0,0,0,0.06);box-shadow:0 1px 4px rgba(0,0,0,0.03);align-items:flex-start;transition:box-shadow 0.2s,transform 0.2s;"
+         onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)';"
+         onmouseout="this.style.boxShadow='0 1px 4px rgba(0,0,0,0.03)';this.style.transform='none';">
+      <div style="flex-shrink:0;width:180px;height:180px;border-radius:8px;overflow:hidden;"
+           onmouseover="this.querySelector('img').style.transform='scale(1.08)';"
+           onmouseout="this.querySelector('img').style.transform='scale(1)';">
+        <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s;">
       </div>
-      {% endfor %}
-    {% endif %}
-  
+      <div style="flex:1;min-width:0;">
+        <div style="font-size:1.2rem;font-weight:700;color:#222;margin-bottom:0.2rem;line-height:1.3;">
+          {% if mp %}
+            <a href="{{ site.baseurl }}{{ mp.url }}" style="color:#222;text-decoration:none;transition:all 0.2s;"
+               onmouseover="this.style.textDecoration='underline';"
+               onmouseout="this.style.textDecoration='none';">{{ member.name }}</a>
+          {% else %}
+            <span>{{ member.name }}</span>
+          {% endif %}
+        </div>
+        <div style="font-size:1rem;color:#555;margin-bottom:0.1rem;">{{ member.title }}</div>
+        {% if member.time %}<div style="font-size:0.9rem;color:#888;">{{ member.time }}</div>{% endif %}
+        {% if member.description and member.description != "" %}<div style="font-size:0.95rem;color:#666;line-height:1.5;margin-top:0.3rem;">{{ member.description }}</div>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
 </div>
