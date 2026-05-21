@@ -91,12 +91,25 @@
   description: ""
   image: "assets/images/people/zhushiyao.jpg"
 
+- name: "Bingyu Liang (梁冰玉)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/liangbingyu.jpg"
+
+- name: "Wenqing Ding (丁文卿)"
+  title: "PhD student"
+  description: "ddl之神在上，保佑这个文卿可以完成所有任务✅"
+  image: "assets/images/people/dingwenqing.png"
+
+- name: "Yingyue Han (韩颖玥)"
+  title: "PhD student"
+  description: ""
+  image: "assets/images/people/hanyingyue.png"
+
 - name: "Yuhang Qiu (邱宇航)"
   title: "PhD student"
   description: ""
   image: "assets/images/people/qiuyuhang.jpg"
-
-
 
 - name: "Zhedong Tang (汤哲栋)"
   title: "PhD student"
@@ -112,19 +125,3 @@
   title: "PhD student"
   description: ""
   image: "assets/images/people/fengqirui.jpg"
-
-- name: "Yingyue Han (韩颖玥)"
-  title: "PhD student"
-  description: ""
-  image: "assets/images/people/hanyingyue.png"
-
-- name: "Bingyu Liang (梁冰玉)"
-  title: "PhD student"
-  description: ""
-  image: "assets/images/people/liangbingyu.jpg"
-
-- name: "Wenqing Ding (丁文卿)"
-  title: "PhD student"
-  description: "ddl之神在上，保佑这个文卿可以完成所有任务✅"
-  image: "assets/images/people/dingwenqing.png"
-
